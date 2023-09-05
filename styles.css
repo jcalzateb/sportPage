@@ -1,0 +1,307 @@
+*{
+  font-family: 'Be Vietnam Pro', 'Roboto', 'Open Sans';
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+
+/* Estilos para el header */
+header {
+  padding: 50px 100px; 
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Flexbox para el contenido del header */
+.contenido-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo para el logo*/
+.logo img {
+  width: 100px; /* Tamaño de logo */
+  height: auto;
+}
+
+/* Estilo para el menú de navegación */
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Estilos para los botones */
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Pseudoclase hover para botones */
+button:hover {
+  background-color: #8b48bfcc;
+}
+
+/* Estilo para el botón de contacto */
+.btn-morado {
+  background-color: #8B48BF;
+  color: white;
+}
+
+/* Flexbox del padre para las secciones */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 100px;
+}
+
+/* Estilo para las secciones del contenido */
+.section-1,
+.section-2,
+.section-3,
+.section-4 {
+  width: 100%;
+  margin: 20px 0;
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Estilo para los títulos  */
+h1{
+  color: 232851;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+ h2 {
+  color: 232851;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos */
+p {
+  color: #696969;
+  margin-bottom: 10px;
+  font-family: 'Roboto';
+}
+
+/* Estilos para la primera sección */
+.section-1 .portada {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-1 .portada-izq img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-1 .portada-der {
+  flex: 1;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+
+/* Estilos para la segunda sección */
+.section-2{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+/* Estilos para la segunda sección parte superior */
+.section-2 .contet-sup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8B48BF;
+  padding: 10px 0 5px 0;
+}
+.titulo-linea{
+  width: 35vw;
+  color: white;
+}
+.descripcion-linea{
+  width: 35vw;
+  color: white;
+  text-align: justify;
+}
+/* Estilos para la segunda sección parte inferior */
+.section-2 .contet-inf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+.contet-inf ol{
+  list-style-type:  decimal-leading-zero;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0; 
+}
+.contet-inf li{
+  width: 45%;
+  position: relative;
+  margin: 10px ;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+
+}
+
+.contet-inf li::before {
+    counter-increment: list-item;
+    content: counter(list-item, decimal-leading-zero); /* Utiliza el valor del contador como contenido */
+    background-color: #8B48BF; 
+    padding: 2px 10px; 
+    border-radius: 10px; 
+    font-weight: bold; 
+    color: white;
+    margin-right: 10px;
+    
+  }
+
+/* Flexbox para la sección de deportistas */
+.contenido-deportistas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tennis-players{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilo para los elementos de jugador */
+.player {
+  margin: 30px;
+}
+
+.player img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.player h3 {
+  color: #232851;
+  font-size: 18px;
+  margin: 20px;
+}
+
+/* Estilo para el seccion 4 */
+.section-4{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8B48BF;
+  padding: 10px 0 5px 0;
+}
+.cubierta-izq{
+  width: 35vw;
+  color: white;
+}
+.cubierta-der{
+  width: 35vw;
+  color: white;
+  text-align: center;
+}
+/* Estilo para el footer */
+footer {
+  background-color: #1E1E26;
+  color: white;
+  padding: 20px 100px;
+}
+
+/* Flexbox para el contenido del footer */
+.contenido-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Estilo para los iconos de redes sociales en el footer */
+.social i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Estilo para el menú de navegación en el footer */
+.footer-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-menu li {
+  margin-right: 20px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilo para el formulario de suscripción en el footer */
+.subscription input[type="email"] {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.subscription button {
+  background-color: #8a63e5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Pseudoclase hover para botón de suscripción en el footer */
+.subscription button:hover {
+  background-color: #6542b9;
+}
+
+/* Estilo para el copyright en el footer */
+.copyright {
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
