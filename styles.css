@@ -1,5 +1,6 @@
+/* Parametros generales */
 *{
-  font-family: 'Be Vietnam Pro', 'Roboto', 'Open Sans';
+  font-family: 'Be Vietnam Pro';
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ body {
   max-width: 100%; 
   overflow-x: hidden;
 }
-
+/* Se realizo primero Desktop
 /* Estilos para el header */
 header {
   padding: 50px 100px; 
@@ -33,16 +34,15 @@ header {
 .menu-burger{
   display: none;
 }
+
 /* Estilo para el menú de navegación */
 .menu ul {
   list-style: none;
   display: flex;
 }
-
 .menu li {
   margin-right: 20px;
 }
-
 .menu a {
   text-decoration: none;
   color: black;
@@ -85,7 +85,7 @@ main {
   margin: 20px 0;
 }
 
-/* Estilo para los títulos  */
+/* Estilo para texto */
 h1{
   color: #232851;
   font-size: 32px;
@@ -111,13 +111,11 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-
 .section-1 .portada-izq img {
   width: 100%;
   height: auto;
   
 }
-
 .section-1 .portada-der {
   flex: 1;
   padding: 0 30px;
@@ -133,6 +131,7 @@ p {
   flex-direction: column;
   width: 100vw;
 }
+
 /* Estilos para la segunda sección parte superior */
 .section-2 .contet-sup{
   display: flex;
@@ -143,13 +142,14 @@ p {
 }
 .titulo-linea{
   width: 35vw;
-  color: white;
+  padding-right: 5px;
 }
 .descripcion-linea{
   width: 35vw;
   color: white;
   text-align: justify;
 }
+
 /* Estilos para la segunda sección parte inferior */
 .section-2 .contet-inf{
   display: flex;
@@ -172,7 +172,6 @@ p {
   display: flex;
   align-items: flex-start;
   text-align: justify;
-
 }
 .contet-inf li article{
   margin-left: 50px;
@@ -211,6 +210,7 @@ p {
   justify-content: center;
   align-items: center;
 }
+
 /* Estilo para los elementos de jugador */
 .player {
   margin: 30px;
@@ -231,7 +231,7 @@ p {
 .section-4{
   width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: #8B48BF;
   padding: 20px 0 10px 0;
@@ -245,6 +245,9 @@ p {
   width: 35vw;
   color: white;
   text-align: center;
+}
+.section-4 button:hover {
+  background-color: #3c0e5fcc;
 }
 
 /* Estilo para el footer */
@@ -273,6 +276,7 @@ footer {
 .section-footer .logo, .social{
   margin: 2px 0;
 }
+
 /* Estilo para los iconos de redes sociales en el footer */
 .social i {
   font-size: 24px;
@@ -302,15 +306,12 @@ footer {
   margin-right: 10px;
   padding: 10px;
 }
-
 .subscription input[type="email"]:valid{
   border: 2px solid green;
   border-radius: 5px;
   margin-right: 10px;
   padding: 10px;
 }
-
-
 .subscription button {
   background-color: #8a63e5;
   color: #fff;
@@ -339,29 +340,15 @@ footer {
   header {
     padding: 50px 100px; 
   }
-  .logo img {
-    width: 100px;
-  }
   .menu-burger{
     display: none;
   }
-  .menu li {
-    margin-right: 20px;
-  }
-  main {
-    padding: 0 100px;
-  }
-  .section-1 .portada-izq img {
-    width: 100%;
-  }
   h1{
     font-size: 4rem;
-    margin-bottom: 10px;
   }
   
   h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
   }
   
   h3{
@@ -370,82 +357,12 @@ footer {
 
   p {
     font-size: 1.1rem;
-    margin-bottom: 10px;
-  }
-
-  .section-1 .portada-der {
-    flex: 1;
-    padding: 0 30px;
-  }
-  
-  .section-2{
-    width: 100vw;
-  }
-  
-  .section-2 .contet-sup{
-    background-color: #8B48BF;
-    padding: 10px 0 5px 0;
   }
   .titulo-linea, .descripcion-linea{
     width: 35%;
   }
-  .section-2 .contet-inf{
-    padding: 20px 100px;
-  }
-  .contet-inf ol{
-    padding: 0;
-    margin: 0; 
-  }
-  .contet-inf li{
-    width: 45%;
-    margin: 0 30px 20px 10px ;
-  }
-  .contet-inf li article{
-    margin-left: 50px;
-  }
-  .contet-inf li h4{
-    margin-bottom: 10px;
-    padding: 2px 0;
-  }
-  .contet-inf p{
-    padding-right: 20px;
-   } 
-  .player {
-    margin: 30px;
-  }
-  .section-4{
-    width: 100vw;
-    padding: 20px 0 10px 0;
-    margin-bottom: 0;
-  }
   .cubierta-izq, .cubierta-der{
     width: 35%;
-  }
-  footer {
-    padding: 20px 100px;
-  }
-  .contenido-footer section {
-    width: 40%;
-    margin: 0 10px 0 0;
-  }
-  .section-footer .logo, .social{
-    margin: 2px 0;
-  }
-  .social i {
-    font-size: 24px;
-    margin: 10px;
-  }
-  
-  .footer-menu li {
-    flex: 0 0 40%;
-    margin-right: 20px;
-  }
-  .subscription button {
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-  .copyright {
-    margin-top: 20px;
   }
 }
 
@@ -502,7 +419,7 @@ footer {
   }
   .section-1 .portada-izq {
     max-width: 80%;
-    background-size: cover; /* Ajusta la imagen al botón */
+    background-size: cover; /* Ajusta la imagen */
     background-repeat: no-repeat;
     background-position: center center; 
   }
